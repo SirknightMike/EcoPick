@@ -1,4 +1,5 @@
 import { Request, Response } from 'express';
+import { User } from '../types/user';
 
 export const getAllUsers =(req: Request, res: Response) => {
     res.send('Get all users');
@@ -9,6 +10,7 @@ export const getUserById = (req: Request, res: Response) => {
 };
 
 export const createUser = (req: Request, res: Response) => {
+    const userCredentials = req.body as User;
     res.send('Create user');
 }
 
