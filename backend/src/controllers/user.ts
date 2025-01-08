@@ -1,8 +1,11 @@
 import { Request, Response } from 'express';
 import { User } from '../types/user';
+import { UserService } from '../services/users-service';
 
 export const getAllUsers =(req: Request, res: Response) => {
-    res.send('Get all users');
+    const userService = new UserService();
+    const users = userService.getAllUsers();
+    res.send(users);
 }; 
 
 export const getUserById = (req: Request, res: Response) => {
