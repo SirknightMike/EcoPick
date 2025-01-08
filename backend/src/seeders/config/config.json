@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Mikedesign3339991",
+    "database": "eco-pick",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Mikedesign3339991",
+    "database": "eco-pick",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Mikedesign3339991",
+    "database": "eco-pick",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
